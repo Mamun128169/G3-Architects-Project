@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+/* Common part styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+html {
+    font-size: 20px;
+}
+
+.btn-primary {
+    padding: 1rem 1.3rem;
+    border-radius: 8px;
+    background: #FF900E;
+    border: none;
+    color: white;
+    margin: 1.5rem 0;
+}
+
+
+
+
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 2.5rem 12rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #424242;
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+
+
+/* banner part styles */
+.banner {
+    margin-top: 5.5rem;
+}
+
+.banner-content {
+    width: 40rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title {
+    color: #131313;
+    font-size: 3.1rem;
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+}
+
+.banner-description {
+    color: #727272;
+    font-size: .8rem;
+    line-height: 1.3rem;
+}
+
+.banner > img {
+    width: 100%;
+}
