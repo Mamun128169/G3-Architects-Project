@@ -153,6 +153,7 @@ main {
 .card-container {
     display: flex;
     justify-content: space-around;
+    padding: 0 .5rem;
 }
 
 .card {
@@ -173,6 +174,31 @@ main {
     color: #727272;
     font-size: 1rem;
     font-weight: 600;
+}
+
+/* sponsors section styles */
+.sponsors {
+    text-align: center;
+    margin-top: 9rem;
+}
+
+.sponsors-content {
+    margin: 0 auto;
+}
+
+.sponsors-description {
+    margin: 1rem 0;
+}
+
+.sponsors-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    align-items: center;
+}
+
+.sponsors-container > img {
+    cursor: pointer;
 }
 
 /* Responsive Media Queries */
@@ -208,7 +234,7 @@ main {
         padding: 0 1rem;
     }
 
-    .card-container {
+    .card-container, .sponsors-container {
         flex-wrap: wrap;
     }
     
@@ -218,6 +244,11 @@ main {
 
     .facts-container-content {
         text-align: center;
+    }
+
+    .sponsors-container {
+        gap: 2rem;
+        justify-content: center;
     }
 
 }
@@ -245,7 +276,7 @@ main {
         padding-top: 1.25rem;
     }
 
-    .card-container {
+    .card-container, .sponsors-container {
         flex-wrap: wrap;
     }
     
@@ -255,6 +286,11 @@ main {
 
     .facts-container-content {
         padding: 0 1rem;
+    }
+
+    .sponsors-container {
+        gap: 2rem;
+        justify-content: center;
     }
 
     
