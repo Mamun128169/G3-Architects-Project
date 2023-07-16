@@ -19,6 +19,7 @@ html {
     border: none;
     color: white;
     margin: 1.5rem 0;
+    cursor: pointer;
 }
 
 
@@ -64,7 +65,7 @@ header {
 }
 
 .banner-content {
-    width: 40rem;
+    max-width: 40rem;
     text-align: center;
     margin: 0 auto;
 }
@@ -84,4 +85,63 @@ header {
 
 .banner > img {
     width: 100%;
+}
+
+
+
+
+
+
+
+/* Responsive Media Queries */
+
+/*small or mobile devices */
+@media screen and (max-width: 576px) {
+    header {
+        padding: 1rem .5rem;
+    }
+
+    html {
+        font-size: 130%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 1rem .5rem;
+    }
+}
+
+
+/* tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header {
+        padding: 1rem 1rem;
+    }
+
+    html {
+        font-size: 140%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 1rem .8rem;
+    }
+}
+
+
+/* larger medium devices */
+@media screen and (min-width: 960px) and (max-width: 1290px) {
+    header {
+        padding: 2rem 9rem;
+    }    
+
+    html {
+        font-size: 90%;
+    }
 }
